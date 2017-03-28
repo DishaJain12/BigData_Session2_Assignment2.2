@@ -1,0 +1,24 @@
+Task1:
+cat max-temp.txt
+ 
+data:
+10-01-1990,10
+10-02-1991,20
+10-02-1992,20
+10-02-1991,30
+10-02-1993,45
+10-02-1994,50
+10-02-1995,15
+10-01-1995,10
+10-02-1996,20
+10-02-1997,20
+10-02-1999,35
+10-02-1997,55
+10-02-1998,50
+10-02-1993,13
+ 
+ 
+hadoop -copyFromLocal <path>/max-temp.txt /user/acadgild/hadoop/max-temp.txt
+ 
+ 
+hadoop fs -chown -R myuser:mygroup /user/acadgild/hadoop/max-temp.txt
